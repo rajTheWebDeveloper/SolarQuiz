@@ -7,10 +7,7 @@ import Finish from './Finish'
 const Quiz:FC = () => {
 
     let [quizData,setQuizData]=useState(QuizData)
-    let [currentQuestion,setCurrentQuestion]=useState(0)
-    let [startQuiz,setStartQuiz]=useState(false)
-    let [reachedEnd,setReachedEnd]=useState(false)
-    let {selectedAnswers,setSelectedAnswers,score,setScore}=useContext(QuizContext)
+    let {selectedAnswers,setSelectedAnswers,score,setScore,setReachedEnd,reachedEnd,startQuiz,setStartQuiz,currentQuestion,setCurrentQuestion}=useContext(QuizContext)
 
 
 
@@ -66,7 +63,7 @@ const Quiz:FC = () => {
     }
 
   return (
-    <div className='w-[90vw] max-w-[800px] mx-auto bg-green-400 py-8 md:py-12 px-4 md:px-10 my-8 rounded'>
+    <div className='w-[90vw] max-w-[800px] mx-auto bg-black py-8 md:py-12 px-4 md:px-10 my-8 rounded'>
         <EachQuestion handleNext={handleNext} question={quizData[currentQuestion].question} options={quizData[currentQuestion].options} currentQuestion={currentQuestion}/>
         {/* <button onClick={handleNext} className='text-center mx-auto w-[100%] mt-2 bg-blue-500 py-1 text-white rounded'>Next</button> */}
     </div>

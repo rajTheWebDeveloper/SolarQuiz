@@ -20,7 +20,7 @@ const EachQuestion = (props:EachQuestionProp) => {
   return (
     <StyledOptions>
         <div className="content">
-            <p className='text-center text-lg'>{props.currentQuestion+1}) {props.question}</p>
+            <p className='text-center text-white text-lg'>{props.currentQuestion+1}) {props.question}</p>
             <div className='options'>
                 {props.options.map((items,idx:number)=>
                 {

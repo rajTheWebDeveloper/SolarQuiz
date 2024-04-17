@@ -3,7 +3,7 @@ import React from 'react'
 const QuizHeader = () => {
   return (
     <div>
-        <h2 className='text-white text-2xl tracking-widest font-extrabold text-center my-10'>Planets Quiz</h2>
+        <h2 className='text-white text-3xl tracking-widest font-extrabold text-center my-10'>Solar Quiz</h2>
     </div>
   )
 }
